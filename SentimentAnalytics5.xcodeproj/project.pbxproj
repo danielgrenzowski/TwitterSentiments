@@ -8,13 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		3C0E14C71D20BF1E00542876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E14C61D20BF1E00542876 /* AppDelegate.swift */; };
-		3C0E14C91D20BF1E00542876 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E14C81D20BF1E00542876 /* MasterViewController.swift */; };
 		3C0E14CB1D20BF1E00542876 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E14CA1D20BF1E00542876 /* DetailViewController.swift */; };
 		3C0E14CE1D20BF1E00542876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E14CC1D20BF1E00542876 /* Main.storyboard */; };
 		3C0E14D01D20BF1E00542876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E14CF1D20BF1E00542876 /* Assets.xcassets */; };
 		3C0E14D31D20BF1E00542876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E14D11D20BF1E00542876 /* LaunchScreen.storyboard */; };
 		3C0E14DE1D20BF1E00542876 /* SentimentAnalytics5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E14DD1D20BF1E00542876 /* SentimentAnalytics5Tests.swift */; };
 		3C0E14E91D20BF1E00542876 /* SentimentAnalytics5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E14E81D20BF1E00542876 /* SentimentAnalytics5UITests.swift */; };
+		3C2B01BA1D359CCF002B1C7B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3C2B01B91D359CCF002B1C7B /* README.md */; };
+		3C9D7D311D318A5B000EBB99 /* TweetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D301D318A5B000EBB99 /* TweetManager.swift */; };
+		3C9D7D341D318B4D000EBB99 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D331D318B4D000EBB99 /* MasterViewController.swift */; };
+		3C9D7D361D31A033000EBB99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D351D31A033000EBB99 /* LoginViewController.swift */; };
+		3C9D7D3A1D32C246000EBB99 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D391D32C246000EBB99 /* InitialViewController.swift */; };
+		3C9D7D3E1D32F717000EBB99 /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D3D1D32F717000EBB99 /* LoginViewControllerDelegate.swift */; };
+		3C9D7D401D32F96B000EBB99 /* MasterViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D3F1D32F96B000EBB99 /* MasterViewControllerDelegate.swift */; };
+		3C9D7D431D3327E5000EBB99 /* Watson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D421D3327E5000EBB99 /* Watson.swift */; };
+		3C9D7D8F1D343362000EBB99 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3C9D7D8E1D343362000EBB99 /* Cartfile */; };
+		3C9D7D931D343661000EBB99 /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D921D343661000EBB99 /* Sentiment.swift */; };
+		3C9D7D951D343CD1000EBB99 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D941D343CD1000EBB99 /* EntityManager.swift */; };
+		3C9D7D9A1D347ED2000EBB99 /* AlchemyLanguageV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7D961D347082000EBB99 /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C9D7D9C1D347F60000EBB99 /* AlchemyLanguageV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7D961D347082000EBB99 /* AlchemyLanguageV1.framework */; };
+		3C9D7D9E1D347F69000EBB99 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7D9D1D347F69000EBB99 /* Alamofire.framework */; };
+		3C9D7DA01D347F78000EBB99 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7D9D1D347F69000EBB99 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C9D7DA21D347FA6000EBB99 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7DA11D347FA6000EBB99 /* Freddy.framework */; };
+		3C9D7DA41D347FAE000EBB99 /* Freddy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7DA11D347FA6000EBB99 /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C9D7DA61D347FE6000EBB99 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7DA51D347FE6000EBB99 /* RestKit.framework */; };
+		3C9D7DA81D347FEC000EBB99 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7DA51D347FE6000EBB99 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8626945B9D66A91C034706AE /* Pods_SentimentAnalytics5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EF8E339C555D90DB1B144C /* Pods_SentimentAnalytics5Tests.framework */; };
+		AD435EF1730D3326FFCD1AD8 /* Pods_SentimentAnalytics5UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C9A17780760C3BA6C0669C /* Pods_SentimentAnalytics5UITests.framework */; };
+		FD39663E7382A46B3824572F /* Pods_SentimentAnalytics5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D531E8F765EE1B6C1BEF1E5A /* Pods_SentimentAnalytics5.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +55,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3C9D7D9B1D347ED2000EBB99 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C9D7D9A1D347ED2000EBB99 /* AlchemyLanguageV1.framework in Embed Frameworks */,
+				3C9D7DA41D347FAE000EBB99 /* Freddy.framework in Embed Frameworks */,
+				3C9D7DA01D347F78000EBB99 /* Alamofire.framework in Embed Frameworks */,
+				3C9D7DA81D347FEC000EBB99 /* RestKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2C51DFFC54BF4215EF107A6A /* Pods-SentimentAnalytics5Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalytics5Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SentimentAnalytics5Tests/Pods-SentimentAnalytics5Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3C0E14C31D20BF1E00542876 /* SentimentAnalytics5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentimentAnalytics5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0E14C61D20BF1E00542876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C0E14C81D20BF1E00542876 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		3C0E14CA1D20BF1E00542876 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3C0E14CA1D20BF1E00542876 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ViewController/DetailViewController.swift; sourceTree = "<group>"; };
 		3C0E14CD1D20BF1E00542876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C0E14CF1D20BF1E00542876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C0E14D21D20BF1E00542876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +87,29 @@
 		3C0E14E41D20BF1E00542876 /* SentimentAnalytics5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentAnalytics5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0E14E81D20BF1E00542876 /* SentimentAnalytics5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalytics5UITests.swift; sourceTree = "<group>"; };
 		3C0E14EA1D20BF1E00542876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C2B01B91D359CCF002B1C7B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3C9D7D301D318A5B000EBB99 /* TweetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetManager.swift; path = Model/TweetManager.swift; sourceTree = "<group>"; };
+		3C9D7D331D318B4D000EBB99 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = ViewController/MasterViewController.swift; sourceTree = "<group>"; };
+		3C9D7D351D31A033000EBB99 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewController/LoginViewController.swift; sourceTree = "<group>"; };
+		3C9D7D391D32C246000EBB99 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = ViewController/InitialViewController.swift; sourceTree = "<group>"; };
+		3C9D7D3D1D32F717000EBB99 /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewControllerDelegate.swift; path = Protocols/LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
+		3C9D7D3F1D32F96B000EBB99 /* MasterViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewControllerDelegate.swift; path = Protocols/MasterViewControllerDelegate.swift; sourceTree = "<group>"; };
+		3C9D7D421D3327E5000EBB99 /* Watson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Watson.swift; path = Model/Watson.swift; sourceTree = "<group>"; };
+		3C9D7D8E1D343362000EBB99 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		3C9D7D921D343661000EBB99 /* Sentiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
+		3C9D7D941D343CD1000EBB99 /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntityManager.swift; path = Model/EntityManager.swift; sourceTree = "<group>"; };
+		3C9D7D961D347082000EBB99 /* AlchemyLanguageV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyLanguageV1.framework; path = Carthage/Build/iOS/AlchemyLanguageV1.framework; sourceTree = "<group>"; };
+		3C9D7D9D1D347F69000EBB99 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3C9D7DA11D347FA6000EBB99 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
+		3C9D7DA51D347FE6000EBB99 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		82EF8E339C555D90DB1B144C /* Pods_SentimentAnalytics5Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalytics5Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C9A17780760C3BA6C0669C /* Pods_SentimentAnalytics5UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalytics5UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9432EC4A1ECDA708227C512C /* Pods-SentimentAnalytics5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalytics5.release.xcconfig"; path = "Pods/Target Support Files/Pods-SentimentAnalytics5/Pods-SentimentAnalytics5.release.xcconfig"; sourceTree = "<group>"; };
+		CDF7F9EBC28E0AF8A1B37868 /* Pods-SentimentAnalytics5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalytics5.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SentimentAnalytics5/Pods-SentimentAnalytics5.debug.xcconfig"; sourceTree = "<group>"; };
+		D3774CB71834647300AFB4DD /* Pods-SentimentAnalytics5UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalytics5UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SentimentAnalytics5UITests/Pods-SentimentAnalytics5UITests.release.xcconfig"; sourceTree = "<group>"; };
+		D531E8F765EE1B6C1BEF1E5A /* Pods_SentimentAnalytics5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalytics5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBBF6F8AB2722CCC6EBA907 /* Pods-SentimentAnalytics5UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalytics5UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SentimentAnalytics5UITests/Pods-SentimentAnalytics5UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E577F095BC54A4AC6737C851 /* Pods-SentimentAnalytics5Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalytics5Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SentimentAnalytics5Tests/Pods-SentimentAnalytics5Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +117,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD39663E7382A46B3824572F /* Pods_SentimentAnalytics5.framework in Frameworks */,
+				3C9D7D9C1D347F60000EBB99 /* AlchemyLanguageV1.framework in Frameworks */,
+				3C9D7DA61D347FE6000EBB99 /* RestKit.framework in Frameworks */,
+				3C9D7D9E1D347F69000EBB99 /* Alamofire.framework in Frameworks */,
+				3C9D7DA21D347FA6000EBB99 /* Freddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8626945B9D66A91C034706AE /* Pods_SentimentAnalytics5Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD435EF1730D3326FFCD1AD8 /* Pods_SentimentAnalytics5UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +147,14 @@
 		3C0E14BA1D20BF1E00542876 = {
 			isa = PBXGroup;
 			children = (
+				3C2B01B91D359CCF002B1C7B /* README.md */,
+				3C9D7D8E1D343362000EBB99 /* Cartfile */,
 				3C0E14C51D20BF1E00542876 /* SentimentAnalytics5 */,
 				3C0E14DC1D20BF1E00542876 /* SentimentAnalytics5Tests */,
 				3C0E14E71D20BF1E00542876 /* SentimentAnalytics5UITests */,
 				3C0E14C41D20BF1E00542876 /* Products */,
+				E484541C610B2A16381195A7 /* Pods */,
+				4B120AD603A84344AAA431C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				3C0E14C61D20BF1E00542876 /* AppDelegate.swift */,
-				3C0E14C81D20BF1E00542876 /* MasterViewController.swift */,
-				3C0E14CA1D20BF1E00542876 /* DetailViewController.swift */,
+				3C9D7D411D32FA88000EBB99 /* Protocols */,
+				3C9D7D2F1D318A2E000EBB99 /* Model */,
+				3C9D7D321D318AB7000EBB99 /* ViewController */,
 				3C0E14CC1D20BF1E00542876 /* Main.storyboard */,
 				3C0E14CF1D20BF1E00542876 /* Assets.xcassets */,
 				3C0E14D11D20BF1E00542876 /* LaunchScreen.storyboard */,
@@ -128,6 +201,64 @@
 			path = SentimentAnalytics5UITests;
 			sourceTree = "<group>";
 		};
+		3C9D7D2F1D318A2E000EBB99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C9D7D301D318A5B000EBB99 /* TweetManager.swift */,
+				3C9D7D421D3327E5000EBB99 /* Watson.swift */,
+				3C9D7D941D343CD1000EBB99 /* EntityManager.swift */,
+				3C9D7D921D343661000EBB99 /* Sentiment.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3C9D7D321D318AB7000EBB99 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C9D7D391D32C246000EBB99 /* InitialViewController.swift */,
+				3C9D7D351D31A033000EBB99 /* LoginViewController.swift */,
+				3C9D7D331D318B4D000EBB99 /* MasterViewController.swift */,
+				3C0E14CA1D20BF1E00542876 /* DetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3C9D7D411D32FA88000EBB99 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3C9D7D3D1D32F717000EBB99 /* LoginViewControllerDelegate.swift */,
+				3C9D7D3F1D32F96B000EBB99 /* MasterViewControllerDelegate.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		4B120AD603A84344AAA431C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C9D7DA51D347FE6000EBB99 /* RestKit.framework */,
+				3C9D7DA11D347FA6000EBB99 /* Freddy.framework */,
+				3C9D7D9D1D347F69000EBB99 /* Alamofire.framework */,
+				3C9D7D961D347082000EBB99 /* AlchemyLanguageV1.framework */,
+				D531E8F765EE1B6C1BEF1E5A /* Pods_SentimentAnalytics5.framework */,
+				82EF8E339C555D90DB1B144C /* Pods_SentimentAnalytics5Tests.framework */,
+				83C9A17780760C3BA6C0669C /* Pods_SentimentAnalytics5UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E484541C610B2A16381195A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDF7F9EBC28E0AF8A1B37868 /* Pods-SentimentAnalytics5.debug.xcconfig */,
+				9432EC4A1ECDA708227C512C /* Pods-SentimentAnalytics5.release.xcconfig */,
+				E577F095BC54A4AC6737C851 /* Pods-SentimentAnalytics5Tests.debug.xcconfig */,
+				2C51DFFC54BF4215EF107A6A /* Pods-SentimentAnalytics5Tests.release.xcconfig */,
+				DBBBF6F8AB2722CCC6EBA907 /* Pods-SentimentAnalytics5UITests.debug.xcconfig */,
+				D3774CB71834647300AFB4DD /* Pods-SentimentAnalytics5UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +266,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C0E14ED1D20BF1E00542876 /* Build configuration list for PBXNativeTarget "SentimentAnalytics5" */;
 			buildPhases = (
+				E185456C17BB521BB09A22EC /* [CP] Check Pods Manifest.lock */,
 				3C0E14BF1D20BF1E00542876 /* Sources */,
 				3C0E14C01D20BF1E00542876 /* Frameworks */,
 				3C0E14C11D20BF1E00542876 /* Resources */,
+				3D619A09F38DC1AB2E8B3B5B /* [CP] Embed Pods Frameworks */,
+				5D1883928A5156DCE0F77AC7 /* [CP] Copy Pods Resources */,
+				3C0E14F61D20C05400542876 /* ShellScript */,
+				3C9D7D9B1D347ED2000EBB99 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C0E14F01D20BF1E00542876 /* Build configuration list for PBXNativeTarget "SentimentAnalytics5Tests" */;
 			buildPhases = (
+				E69C993B5B0B5532F909CADA /* [CP] Check Pods Manifest.lock */,
 				3C0E14D51D20BF1E00542876 /* Sources */,
 				3C0E14D61D20BF1E00542876 /* Frameworks */,
 				3C0E14D71D20BF1E00542876 /* Resources */,
+				08F1D7235DC92386F317484D /* [CP] Embed Pods Frameworks */,
+				0C3B2C849BC3DC33D18FC449 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C0E14F31D20BF1E00542876 /* Build configuration list for PBXNativeTarget "SentimentAnalytics5UITests" */;
 			buildPhases = (
+				E40BD317D8ECB060C72F3E3E /* [CP] Check Pods Manifest.lock */,
 				3C0E14E01D20BF1E00542876 /* Sources */,
 				3C0E14E11D20BF1E00542876 /* Frameworks */,
 				3C0E14E21D20BF1E00542876 /* Resources */,
+				4D1E0CD784C2005ED769DA63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +375,8 @@
 			files = (
 				3C0E14D31D20BF1E00542876 /* LaunchScreen.storyboard in Resources */,
 				3C0E14D01D20BF1E00542876 /* Assets.xcassets in Resources */,
+				3C9D7D8F1D343362000EBB99 /* Cartfile in Resources */,
+				3C2B01BA1D359CCF002B1C7B /* README.md in Resources */,
 				3C0E14CE1D20BF1E00542876 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +397,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08F1D7235DC92386F317484D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SentimentAnalytics5Tests/Pods-SentimentAnalytics5Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C3B2C849BC3DC33D18FC449 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SentimentAnalytics5Tests/Pods-SentimentAnalytics5Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C0E14F61D20C05400542876 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 6cc4296e5022b202cfd2c891d4c93cfc0fd6853c e7cb73f496577a32d2241869142b23cf95690eb69b734b8539f1cc61a7f7daa8";
+		};
+		3D619A09F38DC1AB2E8B3B5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SentimentAnalytics5/Pods-SentimentAnalytics5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D1E0CD784C2005ED769DA63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SentimentAnalytics5UITests/Pods-SentimentAnalytics5UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D1883928A5156DCE0F77AC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SentimentAnalytics5/Pods-SentimentAnalytics5-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E185456C17BB521BB09A22EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E40BD317D8ECB060C72F3E3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E69C993B5B0B5532F909CADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C0E14BF1D20BF1E00542876 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9D7D341D318B4D000EBB99 /* MasterViewController.swift in Sources */,
+				3C9D7D431D3327E5000EBB99 /* Watson.swift in Sources */,
+				3C9D7D951D343CD1000EBB99 /* EntityManager.swift in Sources */,
 				3C0E14CB1D20BF1E00542876 /* DetailViewController.swift in Sources */,
-				3C0E14C91D20BF1E00542876 /* MasterViewController.swift in Sources */,
+				3C9D7D931D343661000EBB99 /* Sentiment.swift in Sources */,
+				3C9D7D311D318A5B000EBB99 /* TweetManager.swift in Sources */,
+				3C9D7D3A1D32C246000EBB99 /* InitialViewController.swift in Sources */,
+				3C9D7D361D31A033000EBB99 /* LoginViewController.swift in Sources */,
+				3C9D7D3E1D32F717000EBB99 /* LoginViewControllerDelegate.swift in Sources */,
 				3C0E14C71D20BF1E00542876 /* AppDelegate.swift in Sources */,
+				3C9D7D401D32F96B000EBB99 /* MasterViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +688,13 @@
 		};
 		3C0E14EE1D20BF1E00542876 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF7F9EBC28E0AF8A1B37868 /* Pods-SentimentAnalytics5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SentimentAnalytics5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DGInc.SentimentAnalytics5;
@@ -412,8 +704,13 @@
 		};
 		3C0E14EF1D20BF1E00542876 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9432EC4A1ECDA708227C512C /* Pods-SentimentAnalytics5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SentimentAnalytics5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DGInc.SentimentAnalytics5;
@@ -423,6 +720,7 @@
 		};
 		3C0E14F11D20BF1E00542876 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E577F095BC54A4AC6737C851 /* Pods-SentimentAnalytics5Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SentimentAnalytics5Tests/Info.plist;
@@ -435,6 +733,7 @@
 		};
 		3C0E14F21D20BF1E00542876 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C51DFFC54BF4215EF107A6A /* Pods-SentimentAnalytics5Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SentimentAnalytics5Tests/Info.plist;
@@ -447,6 +746,7 @@
 		};
 		3C0E14F41D20BF1E00542876 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBBF6F8AB2722CCC6EBA907 /* Pods-SentimentAnalytics5UITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SentimentAnalytics5UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,6 +758,7 @@
 		};
 		3C0E14F51D20BF1E00542876 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3774CB71834647300AFB4DD /* Pods-SentimentAnalytics5UITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SentimentAnalytics5UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +787,7 @@
 				3C0E14EF1D20BF1E00542876 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C0E14F01D20BF1E00542876 /* Build configuration list for PBXNativeTarget "SentimentAnalytics5Tests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +796,7 @@
 				3C0E14F21D20BF1E00542876 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C0E14F31D20BF1E00542876 /* Build configuration list for PBXNativeTarget "SentimentAnalytics5UITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +805,7 @@
 				3C0E14F51D20BF1E00542876 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

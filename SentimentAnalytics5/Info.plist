@@ -2,6 +2,42 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>Fabric</key>
+  <dict>
+    <key>APIKey</key>
+    <string>6cc4296e5022b202cfd2c891d4c93cfc0fd6853c</string>
+    <key>Kits</key>
+    <array>
+      <dict>
+        <key>KitInfo</key>
+        <dict>
+          <key>consumerKey</key>
+          <string>K5Eo0PnRrgSrl0d2wjLKHZcjv</string>
+          <key>consumerSecret</key>
+          <string>EScxnwQoM3PjX3DpgxQCHB9wr7kZluAPQaX6Os5QSDdBnvXy9I</string>
+        </dict>
+        <key>KitName</key>
+        <string>Twitter</string>
+      </dict>
+    </array>
+  </dict>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+      <key>watsonplatform.net</key>
+      <dict>
+        <key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+        <false/>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+        <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+        <key>NSTemporaryExceptionMinimumTLSVersion</key>
+        <string>TLSv1.0</string>
+      </dict>
+    </dict>
+  </dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
