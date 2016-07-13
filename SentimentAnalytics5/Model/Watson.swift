@@ -49,6 +49,8 @@ class Watson: NSObject {
     }
   }
   
+  // MARK - Helpers
+  
   func getDocumentsDirectory() -> NSString {
     
     let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)

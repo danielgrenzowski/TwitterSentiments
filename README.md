@@ -1,13 +1,13 @@
 # Twitter Sentiment Analyzer
 
 ## Synopsis
-Swift project that uses IBM's AlchemyLanguage to analyze recent tweets returned by Twitter's open search API.
+Swift project that uses IBM's AlchemyLanguage to analyze recent tweets returned by Twitter's open search API. Still a work-in-progress :)
 
 ## Deployment Info
-This project requires iOS 9.3+. It requires Cocoa Pods for the TwitterKit and Fabric frameworks, and Carthage to manage the required frameworks for IBM's Watson iOS SDK.
+This project is built for iOS 9.3 and above. It requires Cocoa Pods for the TwitterKit and Fabric frameworks, and Carthage to manage the required frameworks for IBM's Watson iOS SDK.
 
 ## Install Cocoa Pods
-1. Ensure your podfile contains the following pods:  
+1. Ensure your podfile contains the following pods:    
 `pod 'Fabric'`  
 `pod 'TwitterKit'`  
 
@@ -27,7 +27,7 @@ This project requires iOS 9.3+. It requires Cocoa Pods for the TwitterKit and Fa
 `$ git clone https://github.com/danielgrenzowski/TwitterSentiments`
 
 ## License
-* Created by Daniel Grenzowski<br />
+* Created by Daniel Grenzowski  
 * Powered by Twitter's open search API and IBM's Watson Developer Cloud (https://github.com/watson-developer-cloud/ios-sdk)  
 * Version 1.0.1  
   

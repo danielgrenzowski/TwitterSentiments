@@ -1,4 +1,5 @@
 import Foundation
+
 import UIKit
 import TwitterKit
 
@@ -6,13 +7,23 @@ class LoginViewController : UIViewController {
   
   var delegate : LoginViewControllerDelegate?
 
+  // Mark - NSObject
+  
   override func viewDidLoad() {
     
     super.viewDidLoad()
     configureUI()
   }
   
+  // MARK - UI
+  
   func configureUI() -> Void {
+    
+    addTwitterLoginButtonToView(self.view)
+    self.navigationItem.hidesBackButton = true
+  }
+  
+  func addTwitterLoginButtonToView(view: UIView) {
     
     // Configure Twitter Login button
     let logInButton = TWTRLogInButton(logInCompletion: { session, error in
@@ -22,10 +33,7 @@ class LoginViewController : UIViewController {
         print("error: \(error!.localizedDescription)");
       }
     })
-    logInButton.center = self.view.center
-    self.view.addSubview(logInButton)
-    
-    // Hide Navbar back button
-    self.navigationItem.hidesBackButton = true
+    logInButton.center = view.center
+    view.addSubview(logInButton)
   }
 }

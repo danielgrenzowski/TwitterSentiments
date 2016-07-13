@@ -33,20 +33,23 @@ class MasterViewController: UITableViewController {
   
   func configureUI() -> Void {
     
-    // Hide Navbar back button
-    self.navigationItem.hidesBackButton = true
-    
-    configureSearchController()
-    configureActivityIndicator()
+    configureSearchController(self.searchController, tableView:self.tableView)
+    definesPresentationContext = true
+    configureActivityIndicatorForView(self.view)
+    configureNavigationItem(self.navigationItem)
   }
   
-  func configureSearchController() -> Void {
+  func configureNavigationItem(navigationItem:UINavigationItem) {
+    
+    navigationItem.title = "Twitter Sentiment Analyzer"
+    navigationItem.hidesBackButton = true
+  }
+  
+  func configureSearchController(searchController:UISearchController, tableView:UITableView) -> Void {
     
     searchController.searchResultsUpdater = self
     searchController.dimsBackgroundDuringPresentation = false
-    definesPresentationContext = true
     tableView.tableHeaderView = searchController.searchBar
-    
     searchController.searchBar.scopeButtonTitles = ["All", "Entities"]
     searchController.searchBar.delegate = self
   }
@@ -54,19 +57,19 @@ class MasterViewController: UITableViewController {
   // MARK - Activity Indicator
 
   
-  func configureActivityIndicator() {
+  func configureActivityIndicatorForView(view:UIView) {
     indicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 40, 40))
     indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
-    indicator.center = self.view.center
-    self.view.addSubview(indicator)
+    indicator.center = view.center
+    view.addSubview(indicator)
   }
   
-  func turnOnIndicator() {
+  func turnOnIndicator(indicator:UIActivityIndicatorView) {
     indicator.startAnimating()
     indicator.backgroundColor = UIColor.whiteColor()
   }
   
-  func turnOffIndicator() {
+  func turnOffIndicator(indicator:UIActivityIndicatorView) {
     indicator.stopAnimating()
     indicator.hidesWhenStopped = true
   }
@@ -127,26 +130,19 @@ class MasterViewController: UITableViewController {
     // TO DO - Combine similar entities within entityManager before displaying the output
 
     tableView.reloadData()
-    turnOffIndicator()
+    turnOffIndicator(self.indicator)
   }
   
-  func entityManagerDidFetchEntities(notification: NSNotification) -> Void {
-    tableView.reloadData()
-    turnOffIndicator()
-  }
-
   // MARK: Helpers
   
   func filterContentForSearchText(searchText: String, scope: String = "All") {
         
     if (scope == "Entities" || scope == "All") {
       if (!searchText.isEmpty) {
-        turnOnIndicator()
-        tweetManager.fetchDataFromTwitter(withSearchText: searchText)
+        turnOnIndicator(self.indicator)
+        tweetManager.fetchTweetsFromSearchText(searchText)
       }
     }
-
-    
   }
   
   // MARK: Logout button

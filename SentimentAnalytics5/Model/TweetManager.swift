@@ -1,4 +1,5 @@
 import Foundation
+
 import TwitterKit
 
 class TweetManager : NSObject {
@@ -11,9 +12,41 @@ class TweetManager : NSObject {
     self.tweets = tweets
   }
   
+  // Mark - Convenience methods
+  
+  func fetchTweetsFromSearchText(searchText: String) -> Void {
+    
+    let completionBlock:(NSURLResponse?, NSData?, NSError?) -> Void = { (response, data, connectionError) -> Void in
+      
+      if connectionError != nil {
+        print("Error: \(connectionError)")
+      }
+      
+      if let returnedData = data {
+        do {
+          let json = try NSJSONSerialization.JSONObjectWithData(returnedData, options: [])
+          if let dictionary = json as? [String : AnyObject] {
+            if let tweetArray = dictionary["statuses"] as? [AnyObject] {
+              self.tweets = TWTRTweet.tweetsWithJSONArray(tweetArray) as! [TWTRTweet]
+              
+              // update client
+              NSNotificationCenter.defaultCenter().postNotificationName("TweetManagerDidFetchTweets", object: nil)
+            }
+          }
+        } catch let jsonError as NSError {
+          print("json error: \(jsonError.localizedDescription)")
+        }
+      } else {
+        print("Data was empty")
+      }
+    }
+    
+    fetchTweetsFromTwitterSearchAPIWithSearchText(searchText, completionBlock: completionBlock)
+  }
+  
   // MARK - Twitter API
   
-  func fetchDataFromTwitter(withSearchText searchText: String) -> Void {
+  func fetchTweetsFromTwitterSearchAPIWithSearchText(searchText: String, completionBlock:(NSURLResponse?, NSData?, NSError?) -> Void) -> Void {
     
     if let userID = Twitter.sharedInstance().sessionStore.session()?.userID {
       
@@ -25,36 +58,11 @@ class TweetManager : NSObject {
       let params = ["id": "20"]
       var clientError : NSError?
       
-      let request = client.URLRequestWithMethod("GET", URL: searchEndpoint, parameters: params, error: &clientError)
+      let myRequest = client.URLRequestWithMethod("GET", URL: searchEndpoint, parameters: params, error: &clientError)
       
-      client.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
-        
-        if connectionError != nil {
-          print("Error: \(connectionError)")
-        }
-        
-        if let returnedData = data {
-          do {
-            let json = try NSJSONSerialization.JSONObjectWithData(returnedData, options: [])
-            if let dictionary = json as? [String : AnyObject] {
-              if let tweetArray = dictionary["statuses"] as? [AnyObject] {
-                self.tweets = TWTRTweet.tweetsWithJSONArray(tweetArray) as! [TWTRTweet]
-                
-                // update client
-                NSNotificationCenter.defaultCenter().postNotificationName("TweetManagerDidFetchTweets", object: nil)
-              }
-            }
-          } catch let jsonError as NSError {
-            print("json error: \(jsonError.localizedDescription)")
-          }
-        } else {
-          print("Data was empty")
-        }
-
-      }
+      client.sendTwitterRequest(myRequest, completion: completionBlock)
     } else {
       print("User ID not found! Check that an active session has been created through a user login.")
     }
   }
-
 }

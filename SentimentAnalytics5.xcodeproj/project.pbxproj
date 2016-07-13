@@ -15,6 +15,7 @@
 		3C0E14DE1D20BF1E00542876 /* SentimentAnalytics5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E14DD1D20BF1E00542876 /* SentimentAnalytics5Tests.swift */; };
 		3C0E14E91D20BF1E00542876 /* SentimentAnalytics5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E14E81D20BF1E00542876 /* SentimentAnalytics5UITests.swift */; };
 		3C2B01BA1D359CCF002B1C7B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3C2B01B91D359CCF002B1C7B /* README.md */; };
+		3C2B01BC1D36FEE2002B1C7B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3C2B01BB1D36FEE2002B1C7B /* .gitignore */; };
 		3C9D7D311D318A5B000EBB99 /* TweetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D301D318A5B000EBB99 /* TweetManager.swift */; };
 		3C9D7D341D318B4D000EBB99 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D331D318B4D000EBB99 /* MasterViewController.swift */; };
 		3C9D7D361D31A033000EBB99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D351D31A033000EBB99 /* LoginViewController.swift */; };
@@ -23,7 +24,6 @@
 		3C9D7D401D32F96B000EBB99 /* MasterViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D3F1D32F96B000EBB99 /* MasterViewControllerDelegate.swift */; };
 		3C9D7D431D3327E5000EBB99 /* Watson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D421D3327E5000EBB99 /* Watson.swift */; };
 		3C9D7D8F1D343362000EBB99 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3C9D7D8E1D343362000EBB99 /* Cartfile */; };
-		3C9D7D931D343661000EBB99 /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D921D343661000EBB99 /* Sentiment.swift */; };
 		3C9D7D951D343CD1000EBB99 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D7D941D343CD1000EBB99 /* EntityManager.swift */; };
 		3C9D7D9A1D347ED2000EBB99 /* AlchemyLanguageV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7D961D347082000EBB99 /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C9D7D9C1D347F60000EBB99 /* AlchemyLanguageV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7D961D347082000EBB99 /* AlchemyLanguageV1.framework */; };
@@ -88,6 +88,7 @@
 		3C0E14E81D20BF1E00542876 /* SentimentAnalytics5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalytics5UITests.swift; sourceTree = "<group>"; };
 		3C0E14EA1D20BF1E00542876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C2B01B91D359CCF002B1C7B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3C2B01BB1D36FEE2002B1C7B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3C9D7D301D318A5B000EBB99 /* TweetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetManager.swift; path = Model/TweetManager.swift; sourceTree = "<group>"; };
 		3C9D7D331D318B4D000EBB99 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = ViewController/MasterViewController.swift; sourceTree = "<group>"; };
 		3C9D7D351D31A033000EBB99 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewController/LoginViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +97,6 @@
 		3C9D7D3F1D32F96B000EBB99 /* MasterViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewControllerDelegate.swift; path = Protocols/MasterViewControllerDelegate.swift; sourceTree = "<group>"; };
 		3C9D7D421D3327E5000EBB99 /* Watson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Watson.swift; path = Model/Watson.swift; sourceTree = "<group>"; };
 		3C9D7D8E1D343362000EBB99 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		3C9D7D921D343661000EBB99 /* Sentiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
 		3C9D7D941D343CD1000EBB99 /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntityManager.swift; path = Model/EntityManager.swift; sourceTree = "<group>"; };
 		3C9D7D961D347082000EBB99 /* AlchemyLanguageV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyLanguageV1.framework; path = Carthage/Build/iOS/AlchemyLanguageV1.framework; sourceTree = "<group>"; };
 		3C9D7D9D1D347F69000EBB99 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -149,6 +149,7 @@
 			children = (
 				3C2B01B91D359CCF002B1C7B /* README.md */,
 				3C9D7D8E1D343362000EBB99 /* Cartfile */,
+				3C2B01BB1D36FEE2002B1C7B /* .gitignore */,
 				3C0E14C51D20BF1E00542876 /* SentimentAnalytics5 */,
 				3C0E14DC1D20BF1E00542876 /* SentimentAnalytics5Tests */,
 				3C0E14E71D20BF1E00542876 /* SentimentAnalytics5UITests */,
@@ -207,7 +208,6 @@
 				3C9D7D301D318A5B000EBB99 /* TweetManager.swift */,
 				3C9D7D421D3327E5000EBB99 /* Watson.swift */,
 				3C9D7D941D343CD1000EBB99 /* EntityManager.swift */,
-				3C9D7D921D343661000EBB99 /* Sentiment.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -377,6 +377,7 @@
 				3C0E14D01D20BF1E00542876 /* Assets.xcassets in Resources */,
 				3C9D7D8F1D343362000EBB99 /* Cartfile in Resources */,
 				3C2B01BA1D359CCF002B1C7B /* README.md in Resources */,
+				3C2B01BC1D36FEE2002B1C7B /* .gitignore in Resources */,
 				3C0E14CE1D20BF1E00542876 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,7 +543,6 @@
 				3C9D7D431D3327E5000EBB99 /* Watson.swift in Sources */,
 				3C9D7D951D343CD1000EBB99 /* EntityManager.swift in Sources */,
 				3C0E14CB1D20BF1E00542876 /* DetailViewController.swift in Sources */,
-				3C9D7D931D343661000EBB99 /* Sentiment.swift in Sources */,
 				3C9D7D311D318A5B000EBB99 /* TweetManager.swift in Sources */,
 				3C9D7D3A1D32C246000EBB99 /* InitialViewController.swift in Sources */,
 				3C9D7D361D31A033000EBB99 /* LoginViewController.swift in Sources */,
