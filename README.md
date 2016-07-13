@@ -8,8 +8,8 @@ This project requires iOS 9.3+. It requires Cocoa Pods for additional third-part
 
 ## Install Cocoa Pods
 1. Ensure your podfile contains the following pods:
-`pod 'Fabric'`
-`pod 'TwitterKit'`
+`pod 'Fabric'`<br />
+`pod 'TwitterKit'`<br />
 
 2. Run `pod install`
 
