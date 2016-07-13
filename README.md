@@ -7,7 +7,7 @@ Swift project that uses IBM's AlchemyLanguage to analyze recent tweets returned 
 This project requires iOS 9.3+. It requires Cocoa Pods for additional third-party frameworks as outlined below.
 
 ## Install Cocoa Pods
-1. Ensure your podfile contains the following pods:
+1. Ensure your podfile contains the following pods:<br />
 `pod 'Fabric'`<br />
 `pod 'TwitterKit'`<br />
 
