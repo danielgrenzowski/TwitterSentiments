@@ -17,7 +17,7 @@ This project requires iOS 9.3+. It requires Cocoa Pods for additional third-part
 `git clone https://github.com/danielgrenzowski/TwitterSentiments`
 
 ## License
-Created by Daniel Grenzowski
-Powered by Twitter's open search API and IBM's AlchemyLanguage API
-Version 1.0.1 (Beta)
+Created by Daniel Grenzowski<br />
+Powered by Twitter's open search API and IBM's AlchemyLanguage API<br />
+Version 1.0.1 <br />
 Copyright (c) 2016 DG Inc. All rights reserved.
