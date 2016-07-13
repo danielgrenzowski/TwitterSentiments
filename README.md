@@ -15,14 +15,13 @@ This project requires iOS 9.3+. It requires Cocoa Pods for the TwitterKit and Fa
 
 ## Install Carthage
 
-1. Ensure your Cartfile contains the following:  
-`github "watson-developer-cloud/ios-sdk"`  
+1. Ensure your Cartfile contains the following: `github "watson-developer-cloud/ios-sdk"`  
 
 2. Run `$ carthage update --platform iOS` in the root directory of your project and add the following frameworks to your Xcode project:  
-- RestKit  
-- Freddy  
-- AlamoFire  
-- AlchemyLanguageV1  
+ * RestKit  
+ * Freddy  
+ * AlamoFire  
+ * AlchemyLanguageV1  
 
 ## Installation
 `$ git clone https://github.com/danielgrenzowski/TwitterSentiments`
