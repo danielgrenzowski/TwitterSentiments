@@ -7,7 +7,8 @@ Swift project that uses IBM's AlchemyLanguage to analyze recent tweets returned 
 This project is built for iOS 9.3 and above. It requires Cocoa Pods for the TwitterKit and Fabric frameworks, and Carthage to manage the required frameworks for IBM's Watson iOS SDK.
 
 ## Install Cocoa Pods
-1. Ensure your podfile contains the following pods:    
+1. Ensure your podfile contains the following pods:  
+  
 `pod 'Fabric'`  
 `pod 'TwitterKit'`  
 

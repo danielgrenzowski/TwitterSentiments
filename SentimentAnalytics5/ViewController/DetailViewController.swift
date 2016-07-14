@@ -30,41 +30,16 @@ class DetailViewController: UIViewController {
     
     if let myEntity = self.entity {
       
-      if let myEntityName = myEntity.disambiguated?.name {
-        configureLabel(entityNameLabel, withText: myEntityName)
-      } else {
-        configureLabel(entityNameLabel, withText: "No name found for selected Entity")
+      configureLabel(entityTypeLabel, withText: myEntity.type)
+      if let score = myEntity.sentiment?.score {
+        configureLabel(sentimentScoreLabel, withText: String(score))
       }
-      
-      if let myEntityType = myEntity.type {
-        configureLabel(entityTypeLabel, withText: myEntityType)
-      } else {
-        configureLabel(entityTypeLabel, withText: "No type found for selected Entity")
+      configureLabel(sentimentPolarityLabel, withText: myEntity.sentiment?.type)
+      if let relevance = myEntity.relevance {
+        configureLabel(entityRelevanceLabel, withText: String(relevance))
       }
-      
-      if let myEntitySentimentScore = myEntity.sentiment?.score {
-          configureLabel(sentimentScoreLabel, withText: String(myEntitySentimentScore))
-      } else {
-        configureLabel(sentimentScoreLabel, withText: "No score found for selected Entity")
-      }
-      
-      if let myEntitySentimentPolarity = myEntity.sentiment?.type {
-          configureLabel(sentimentPolarityLabel, withText: myEntitySentimentPolarity)
-      } else {
-        configureLabel(sentimentPolarityLabel, withText: "No polarity found for selected Entity")
-      }
-
-      if let myEntityRelevance = myEntity.relevance {
-        configureLabel(entityRelevanceLabel, withText: String(myEntityRelevance))
-      } else {
-        configureLabel(entityRelevanceLabel, withText: "No relevance found for selected Entity")
-      }
-      if let myEntityText = myEntity.text {
-        configureLabel(entityTextLabel, withText: String(myEntityText))
-      } else {
-        configureLabel(entityTextLabel, withText: "No text found for selected Entity")
-      }
-      print(myEntity)
+      configureLabel(entityNameLabel, withText: myEntity.text)
+      configureLabel(entityTextLabel, withText: myEntity.disambiguated?.name)
     }
   }
   
@@ -74,8 +49,13 @@ class DetailViewController: UIViewController {
     }
   }
   
-  func configureLabel(label: UILabel, withText text:String) -> Void {
-    label.text = text
+  func configureLabel(label: UILabel, withText text:String?) -> Void {
+    
+    if let myText = text {
+      label.text = myText
+    } else {
+      label.text = "(Not found)"
+    }
   }
 }
 

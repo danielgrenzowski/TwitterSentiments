@@ -1,7 +1,6 @@
 import Foundation
 
 import AlchemyLanguageV1
-
 import TwitterKit
 
 class Watson: NSObject {
@@ -17,11 +16,9 @@ class Watson: NSObject {
       
       let text = tweet.text;
     
-      // Write Tweet to a local text file
-      
+      // Write tweet to a local text file (required for AlchemyLanguage API call
       let tempFile = "tempFile.txt"
       let fileName = getDocumentsDirectory().stringByAppendingPathComponent(tempFile)
-      
       do {
         try text.writeToFile(fileName, atomically: true, encoding: NSUTF8StringEncoding)
       } catch {
@@ -30,9 +27,7 @@ class Watson: NSObject {
       }
       
       let url = NSURL(fileURLWithPath: fileName)
-      
       let alchemyLanguage = AlchemyLanguage(apiKey: apiKey)
-      
       alchemyLanguage.getRankedNamedEntities(forText:url, success: { (results) in
         if let myEntities = results.entitites {
           for myEntity in myEntities {

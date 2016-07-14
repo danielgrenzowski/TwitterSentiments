@@ -27,6 +27,7 @@ class TweetManager : NSObject {
           let json = try NSJSONSerialization.JSONObjectWithData(returnedData, options: [])
           if let dictionary = json as? [String : AnyObject] {
             if let tweetArray = dictionary["statuses"] as? [AnyObject] {
+              
               self.tweets = TWTRTweet.tweetsWithJSONArray(tweetArray) as! [TWTRTweet]
               
               // update client
@@ -37,7 +38,7 @@ class TweetManager : NSObject {
           print("json error: \(jsonError.localizedDescription)")
         }
       } else {
-        print("Data was empty")
+        print("No data was returned by request")
       }
     }
     

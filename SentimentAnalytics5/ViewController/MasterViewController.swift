@@ -41,13 +41,12 @@ class MasterViewController: UITableViewController {
   
   func configureNavigationItem(navigationItem:UINavigationItem) {
     
-    navigationItem.title = "Twitter Sentiment Analyzer"
+    navigationItem.title = "Entities"
     navigationItem.hidesBackButton = true
   }
   
   func configureSearchController(searchController:UISearchController, tableView:UITableView) -> Void {
     
-    searchController.searchResultsUpdater = self
     searchController.dimsBackgroundDuringPresentation = false
     tableView.tableHeaderView = searchController.searchBar
     searchController.searchBar.scopeButtonTitles = ["All", "Entities"]
@@ -56,7 +55,6 @@ class MasterViewController: UITableViewController {
   
   // MARK - Activity Indicator
 
-  
   func configureActivityIndicatorForView(view:UIView) {
     indicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 40, 40))
     indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
@@ -163,27 +161,18 @@ class MasterViewController: UITableViewController {
   }
 }
 
-// MARK: UISearchResultsUpdating delegate methods
-
-extension MasterViewController: UISearchResultsUpdating {
-  
-  func updateSearchResultsForSearchController(searchController: UISearchController) {
-
-
-  }
-  
-  func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-    let searchBar = searchController.searchBar
-    let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-    filterContentForSearchText(searchController.searchBar.text!, scope: scope)  }
-}
-
 // MARK: UISearchBarDelegate delegate methods
 
 extension MasterViewController: UISearchBarDelegate {
   func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
     
-    
+    // To be implemented after other scope buttons are added
+  }
+  
+  func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+    let searchBar = searchController.searchBar
+    let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+    filterContentForSearchText(searchController.searchBar.text!, scope: scope)
   }
 }
 

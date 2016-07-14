@@ -20,12 +20,17 @@ class LoginViewController : UIViewController {
   func configureUI() -> Void {
     
     addTwitterLoginButtonToView(self.view)
-    self.navigationItem.hidesBackButton = true
+    configureNavigationItem(self.navigationItem)
+  }
+  
+  func configureNavigationItem(navigationItem:UINavigationItem) {
+    
+    navigationItem.hidesBackButton = true
   }
   
   func addTwitterLoginButtonToView(view: UIView) {
     
-    // Configure Twitter Login button
+    // Configure Twitter login button
     let logInButton = TWTRLogInButton(logInCompletion: { session, error in
       if (session != nil) {
         self.delegate?.loginViewControllerDidLogUserIn(self, withUserId: session!.userID)
