@@ -95,7 +95,21 @@ class MasterViewController: UITableViewController {
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-    return entityManager.entities.count
+    let entityCount = entityManager.entities.count
+    
+    if (entityCount == 0) {
+      let emptyLabel = UILabel(frame: CGRectMake(0, 0, tableView.bounds.size.width, tableView.bounds.size.height))
+      emptyLabel.text = "Enter your search above to fetch entities from Twitter!"
+      emptyLabel.textAlignment = NSTextAlignment.Center
+      emptyLabel.numberOfLines = 0
+      tableView.backgroundView = emptyLabel
+      tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+    } else {
+      
+    }
+    
+    return entityCount
+
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
