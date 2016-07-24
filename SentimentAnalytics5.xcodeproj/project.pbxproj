@@ -33,6 +33,7 @@
 		3C9D7DA41D347FAE000EBB99 /* Freddy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7DA11D347FA6000EBB99 /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C9D7DA61D347FE6000EBB99 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7DA51D347FE6000EBB99 /* RestKit.framework */; };
 		3C9D7DA81D347FEC000EBB99 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9D7DA51D347FE6000EBB99 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CE6DEAA1D4550C700303E60 /* TweetManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6DEA91D4550C700303E60 /* TweetManagerTests.swift */; };
 		8626945B9D66A91C034706AE /* Pods_SentimentAnalytics5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EF8E339C555D90DB1B144C /* Pods_SentimentAnalytics5Tests.framework */; };
 		AD435EF1730D3326FFCD1AD8 /* Pods_SentimentAnalytics5UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C9A17780760C3BA6C0669C /* Pods_SentimentAnalytics5UITests.framework */; };
 		FD39663E7382A46B3824572F /* Pods_SentimentAnalytics5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D531E8F765EE1B6C1BEF1E5A /* Pods_SentimentAnalytics5.framework */; };
@@ -102,6 +103,7 @@
 		3C9D7D9D1D347F69000EBB99 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		3C9D7DA11D347FA6000EBB99 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
 		3C9D7DA51D347FE6000EBB99 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		3CE6DEA91D4550C700303E60 /* TweetManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetManagerTests.swift; sourceTree = "<group>"; };
 		82EF8E339C555D90DB1B144C /* Pods_SentimentAnalytics5Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalytics5Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C9A17780760C3BA6C0669C /* Pods_SentimentAnalytics5UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalytics5UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9432EC4A1ECDA708227C512C /* Pods-SentimentAnalytics5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalytics5.release.xcconfig"; path = "Pods/Target Support Files/Pods-SentimentAnalytics5/Pods-SentimentAnalytics5.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				3C0E14DD1D20BF1E00542876 /* SentimentAnalytics5Tests.swift */,
+				3CE6DEA91D4550C700303E60 /* TweetManagerTests.swift */,
 				3C0E14DF1D20BF1E00542876 /* Info.plist */,
 			);
 			path = SentimentAnalytics5Tests;
@@ -557,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C0E14DE1D20BF1E00542876 /* SentimentAnalytics5Tests.swift in Sources */,
+				3CE6DEAA1D4550C700303E60 /* TweetManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

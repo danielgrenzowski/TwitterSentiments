@@ -8,16 +8,11 @@ class MasterViewController: UITableViewController {
   var detailViewController: DetailViewController? = nil
   let searchController : UISearchController = UISearchController(searchResultsController: nil)
   var indicator = UIActivityIndicatorView()
-
-  // Models
-  let tweetManager : TweetManager = TweetManager(tweets: []);
-  let watson : Watson = Watson()
-  let entityManager : EntityManager = EntityManager(entities: [])
   
   // Delegate
   var delegate : MasterViewControllerDelegate?
-
-
+  
+  
   // MARK - NSObject
   
   override func viewDidLoad() {
@@ -80,7 +75,7 @@ class MasterViewController: UITableViewController {
       
         if let indexPath = self.tableView.indexPathForSelectedRow {
           
-          let entity = entityManager.entities[indexPath.row]
+          let entity = EntityManager.sharedInstance.entities[indexPath.row]
           let controller = segue.destinationViewController as! DetailViewController
           controller.entity = entity
         }
@@ -95,7 +90,7 @@ class MasterViewController: UITableViewController {
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-    let entityCount = entityManager.entities.count
+    let entityCount = EntityManager.sharedInstance.entities.count
     
     if (entityCount == 0) {
       let emptyLabel = UILabel(frame: CGRectMake(0, 0, tableView.bounds.size.width, tableView.bounds.size.height))
@@ -104,8 +99,6 @@ class MasterViewController: UITableViewController {
       emptyLabel.numberOfLines = 0
       tableView.backgroundView = emptyLabel
       tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-    } else {
-      
     }
     
     return entityCount
@@ -116,7 +109,7 @@ class MasterViewController: UITableViewController {
     
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-    let entity = entityManager.entities[indexPath.row]
+    let entity = EntityManager.sharedInstance.entities[indexPath.row]
     cell.textLabel?.text = entity.text
     cell.detailTextLabel?.text = "Count: " + String(entity.count!)
     
@@ -131,15 +124,15 @@ class MasterViewController: UITableViewController {
   
   func tweetManagerDidFetchTweets(notification: NSNotification) -> Void {
     
-    let tweets = tweetManager.tweets
-    watson.fetchWatsonResponsesFromTweets(tweets)
+    let tweets = TweetManager.sharedInstance.tweets
+    Watson.sharedInstance.fetchWatsonResponsesFromTweets(tweets)
   }
   
   func watsonDidFetchEntities(notification: NSNotification) -> Void {
     
-    let entities = watson.entities
-    entityManager.entities = entities
-    // TO DO - Combine similar entities within entityManager before displaying the output
+    let entities = Watson.sharedInstance.entities
+    EntityManager.sharedInstance.entities = entities
+    // TO DO - Combine similar entities within EntityManager before displaying the output
 
     tableView.reloadData()
     turnOffIndicator(self.indicator)
@@ -152,7 +145,7 @@ class MasterViewController: UITableViewController {
     if (scope == "Entities" || scope == "All") {
       if (!searchText.isEmpty) {
         turnOnIndicator(self.indicator)
-        tweetManager.fetchTweetsFromSearchText(searchText)
+        TweetManager.sharedInstance.fetchTweetsFromSearchText(searchText)
       }
     }
   }

@@ -2,14 +2,13 @@ import Foundation
 
 import TwitterKit
 
-class TweetManager : NSObject {
+class TweetManager {
   
-  var tweets : [TWTRTweet]
-
-  // MARK - NSObject
+  var tweets : [TWTRTweet] = []
   
-  init(tweets:[TWTRTweet]) {
-    self.tweets = tweets
+  // Singleton constant and private initializer
+  static let sharedInstance = TweetManager()
+  private init() {
   }
   
   // Mark - Convenience methods

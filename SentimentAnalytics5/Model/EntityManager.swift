@@ -2,12 +2,13 @@ import Foundation
 
 import AlchemyLanguageV1
 
-class EntityManager : NSObject {
+class EntityManager {
   
-  var entities : [Entity]
+  var entities : [Entity] = []
   
-  init(entities: [Entity]) {
-    self.entities = entities
+  // Singleton constant and private initializer
+  static let sharedInstance = EntityManager()
+  private init() {
   }
-
+  
 }

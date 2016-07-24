@@ -3,10 +3,15 @@ import Foundation
 import AlchemyLanguageV1
 import TwitterKit
 
-class Watson: NSObject {
+class Watson {
   
   let apiKey = "a70edc2dc0ce25efd443de3e3e1e912b486919ee"
-  var entities = [Entity]()
+  var entities : [Entity] = []
+  
+  // Singleton constant and private initializer
+  static let sharedInstance = Watson()
+  private init() {
+  }
   
   func fetchWatsonResponsesFromTweets(tweetArray:[TWTRTweet]) -> Void {
     
